@@ -14,7 +14,7 @@
     #231557 0%,
     #44107a 29%,
     #ff1361 67%,
-    #fff800 100%
+    #fcf65ac0 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -33,22 +33,35 @@
 }
 /* Image center styles */
 .grid {
+  max-width: 80%;
+  margin: 0 auto;
   display: grid;
   justify-content: center;
   align-items: center;
-  padding: 0% 2%;
+  background: #fff;
+  overflow: hidden;
 }
-
-.image {
-  width: 100%;
+.grid img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.grid:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /* MEDIA QUERIES */
 
-/* Mobile first, we start from the smallest viewport width */
+/* Mobile first, I start from the smallest viewport width */
 
 /* From 320px and up */
 @media (min-width: 320px) {
+  .image {
+    max-width: 80%;
+    margin: 0 auto;
+  }
   .logo {
     width: 20%;
   }
@@ -69,6 +82,10 @@
 
 /* From 1024px and up */
 @media (min-width: 1024px) {
+  .image {
+    max-width: 80%;
+    margin: 0 auto;
+  }
   .logo {
     width: 7%;
   }
