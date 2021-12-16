@@ -1,9 +1,9 @@
-/* logo image css styles*/
+/* logo image styles*/
 .logo {
   width: 7%;
   margin: 0px auto;
 }
-/* company name headind styles */
+/* company name  styles */
 .title {
   text-align: center;
   font-size: 2rem;
@@ -14,7 +14,7 @@
     #231557 0%,
     #44107a 29%,
     #ff1361 67%,
-    #fcf65ac0 100%
+    #f9a32a 100%
   );
   background-size: auto auto;
   background-clip: border-box;
